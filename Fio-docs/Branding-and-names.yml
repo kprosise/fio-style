@@ -30,6 +30,7 @@ swap:
   fioctl: Fioctl
   arduino: Arduino
   nxp: NXP
+  target: Target
   'aktualizr(?:-| )lite': aktualizr-lite
   exceptions:
     '?:+.py'
