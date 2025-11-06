@@ -25,23 +25,22 @@
 extends: conditional
 message: "'%s' has no definition, definition is missing capitalization, or is a variable name and should be written as a literal."
 link: https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide#Abbreviations
-level: error
+level: warning
 scope: text
 ignorecase: false
 # Ensures that the existence of 'first' implies the existence of 'second'.
 first: '\b([A-Z]{3,5})\b'
 second: '(?:\b[A-Z][a-z]+ )+\(([A-Z]{3,5})\)'
-
 exceptions:
 # This is not exhaustive, but covers some of the most common.
 # Some are left off as they are used as varable names, and should still be flagged.
 # Remember we tend to be familiar with many of those left off.
 # The audience is assumed to be at least passingly familiar with the Yocto Project,
 # and as such, embedded development.
-# This rule was tested against the docs for v89 to help identify exceptions.
-
+# This rule was tested against the docs for v95 to help identify exceptions.
   - AMD
   - API
+  - ARG
   - ARM
   - AWS
   - BSP
@@ -60,6 +59,7 @@ exceptions:
   - JSON
   - JTAG
   - KMS
+  - MAC
   - NGINX
   - NXP
   - OTA
@@ -75,6 +75,7 @@ exceptions:
   - TLS
   - UART
   - UI
+  - UNO
   - UX
   - USB
   - VPN
