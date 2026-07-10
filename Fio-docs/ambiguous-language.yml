@@ -1,0 +1,28 @@
+extends: existence
+message: "Ambiguous language: '%s' — use precise, specific language instead."
+level: warning
+ignorecase: true
+link: 'https://foundriesio.atlassian.net/wiki/spaces/ID/pages/2392067/Foundries.io+Style+and+Communication+Guide'
+tokens:
+  # Vague quantifiers
+  - \bvarious\b
+  - \bseveral\b
+  - \bnumerous\b
+  - \ba number of\b
+  - \ba variety of\b
+  # Vague temporal references
+  - \bsoon\b
+  - \bshortly\b
+  - \bin the near future\b
+  - \bat some point\b
+  # Hedging language
+  - \bmaybe\b
+  - \bperhaps\b
+  - \bprobably\b
+  # Vague catch-all terms
+  - \betc\b
+  - \band so on\b
+  - \bkind of\b
+  - \bsort of\b
+  - \bsomething like\b
+  - \bmore or less\b
