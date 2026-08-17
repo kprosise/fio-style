@@ -184,6 +184,7 @@ Best practices:
 - Avoid ambiguous language,
   and be mindful of metaphors and phrases that may not translate.
 - Match the voice/tone with that of the surrounding content.
+- Avoid Negative contrastive language, a common AI tic.
 
 ### Sentence Length
 
